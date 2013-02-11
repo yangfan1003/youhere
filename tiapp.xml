@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">gOKTIgf52ro2W0MWEp613E4ejjgsMzLP</property>
+    <property name="acs-oauth-key-production" type="string">eL9kuajob120vZM9VFuIqq1z6aTbDrnL</property>
+    <property name="acs-api-key-production" type="string">777aNG8aaH4bssEey7Zs4G0AJUDnL2JY</property>
+    <property name="acs-oauth-secret-development" type="string">yCFTk7vhiUwRrBdOeDDSKye6ckqOmBS8</property>
+    <property name="acs-oauth-key-development" type="string">9NKZ0uQHJ6H6SoTooNBoTqtSo1WhoGuz</property>
+    <property name="acs-api-key-development" type="string">EoqOhudKiMPKAEiEt91sEuBeALVEM3zC</property>
+    <property name="ti.android.google.map.api.key.development">0ZnKXkWA2dIAu2EM-OV4ZD2lJY3sEWE5TSgjJNg</property>
+    <deployment-targets>
+        <target device="mobileweb">true</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.1.3.GA</sdk-version>
+    <id>com.bubbleme.youhere</id>
+    <name>YouHere</name>
+    <version>1.0</version>
+    <publisher>samhuang</publisher>
+    <url>http://bubbleme.com</url>
+    <description>not specified</description>
+    <copyright>2012 by samhuang</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>7b536928-f7af-482c-a996-eae9c0e57996</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.1.0">ti.cloud</module>
+        <module platform="iphone" version="0.1">ti.youhere</module>
+        <module platform="iphone" version="1.1">ti.imagefactory</module>
+    </modules>
+</ti:app>
